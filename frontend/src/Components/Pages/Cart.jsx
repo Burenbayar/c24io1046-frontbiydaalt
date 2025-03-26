@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { CartContext } from "./CartContext";
 import { PlusOutlined, MinusOutlined, DeleteOutlined } from "@ant-design/icons";
-import { Button } from "antd";
 
 const Cart = () => {
   const { cart, updateQuantity, removeFromCart, clearCart } = useContext(CartContext);
@@ -35,29 +34,29 @@ const Cart = () => {
                   </div>
 
                   <div className="flex items-center gap-3 mt-2">
-                    <Button 
+                    <button 
                       onClick={() => updateQuantity(item.id, item.quantity + 1)}
                       className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded-lg"
                     >
                       <PlusOutlined />
-                    </Button>
+                    </button>
 
                     <span className="text-lg font-medium">{item.quantity}</span>
 
-                    <Button 
+                    <button 
                       onClick={() => updateQuantity(item.id, item.quantity - 1)} 
                       disabled={item.quantity === 1}
                       className="bg-gray-300 hover:bg-gray-400 text-black px-3 py-1 rounded-lg disabled:opacity-50"
                     >
                       <MinusOutlined />
-                    </Button>
+                    </button>
 
-                    <Button 
+                    <button 
                       onClick={() => removeFromCart(item.id)}
                       className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded-lg"
                     >
                       <DeleteOutlined />
-                    </Button>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -66,12 +65,12 @@ const Cart = () => {
 
           <div className="mt-6 p-4 bg-gray-100 dark:bg-gray-900 rounded-xl shadow-md flex justify-between items-center">
             <h3 className="text-xl font-bold text-gray-800 dark:text-white">Total: ${totalAmount.toFixed(2)}</h3>
-            <Button 
+            <button 
               onClick={clearCart} 
               className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg"
             >
               Empty Cart
-            </Button>
+            </button>
           </div>
         </>
       )}

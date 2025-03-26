@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { CartContext } from "./CartContext";
-import { PlusOutlined, MinusOutlined, DeleteOutlined } from "@ant-design/icons";
 
 const Cart = () => {
   const { cart, updateQuantity, removeFromCart, clearCart } = useContext(CartContext);
@@ -38,7 +37,7 @@ const Cart = () => {
                       onClick={() => updateQuantity(item.id, item.quantity + 1)}
                       className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded-lg"
                     >
-                      <PlusOutlined />
+                    +
                     </button>
 
                     <span className="text-lg font-medium">{item.quantity}</span>
@@ -48,14 +47,14 @@ const Cart = () => {
                       disabled={item.quantity === 1}
                       className="bg-gray-300 hover:bg-gray-400 text-black px-3 py-1 rounded-lg disabled:opacity-50"
                     >
-                      <MinusOutlined />
+                      -
                     </button>
 
                     <button 
                       onClick={() => removeFromCart(item.id)}
                       className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded-lg"
                     >
-                      <DeleteOutlined />
+                      delete
                     </button>
                   </div>
                 </div>

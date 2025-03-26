@@ -27,7 +27,6 @@ const AppContent = ({ cart, setCart }) => {
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp/>}/>
-          <Route path="/ProductTable" element={<ProductTable />} />
           <Route path="/profile" element={<Profile />} />    
           <Route path="/product/:id" element={<ProductDetails/>}/>
           <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />} /> 

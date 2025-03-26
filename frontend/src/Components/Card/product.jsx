@@ -55,10 +55,10 @@ function Mycard() {
           {filteredProducts.map((product) => (
             <div
               key={product.id}
-              className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300"
+              className="bg-white  p-4 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300"
             >
               <img
-                className="w-full h-48 object-cover rounded-lg cursor-pointer"
+                className="w-full h-48 object-contain rounded-lg cursor-pointer"
                 alt={product.name}
                 src={product.image}
                 onClick={() => navigate(`/product/${product.id}`)}
@@ -71,7 +71,7 @@ function Mycard() {
                 >
                   {product.name}
                 </h2>
-                <h3 className="text-gray-600 dark:text-gray-300">Price: ${product.price}</h3>
+                <h3 className="text-gray-600 ">Price: ${product.price}</h3>
 
                 <ColorList
                   colors={Array.isArray(product.color) ? product.color : [product.color]}

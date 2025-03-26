@@ -11,26 +11,26 @@ const Cart = () => {
     <div className="p-6 max-w-4xl mx-auto">
 
       {cart.length === 0 ? (
-        <p className="text-gray-500 dark:text-gray-400">Your cart is empty.</p>
+        <p className="text-gray-500 ">Your cart is empty.</p>
       ) : (
         <>
           <div className="grid gap-6">
             {cart.map((item) => (
-              <div key={item.id} className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg flex items-center gap-4">
+              <div key={item.id} className="bg-white  p-4 rounded-xl shadow-lg flex items-center gap-4">
                 <img src={item.image} alt={item.name} className="w-24 h-24 object-cover rounded-lg" />
                 
                 <div className="flex-1">
                   <h3 className="text-lg font-semibold text-gray-800 dark:text-white">{item.name}</h3>
-                  <p className="text-gray-600 dark:text-gray-300">Price: ${item.price}</p>
+                  <p className="text-gray-600 ">Price: ${item.price}</p>
                   
                
                   <div className="mt-2 flex items-center gap-2">
-                    <span className="text-gray-700 dark:text-gray-300">Color:</span>
+                    <span className="text-gray-700 ">Color:</span>
                     <div 
                       className="w-6 h-6 rounded-full border-2 shadow-md" 
                       style={{ backgroundColor: item.selectedColor || "gray" }}
                     />
-                    <span className="text-gray-800 dark:text-white font-semibold">{item.selectedColor || "None"}</span>
+                    <span className="text-gray-800  font-semibold">{item.selectedColor || "None"}</span>
                   </div>
 
                   <div className="flex items-center gap-3 mt-2">
@@ -63,8 +63,8 @@ const Cart = () => {
             ))}
           </div>
 
-          <div className="mt-6 p-4 bg-gray-100 dark:bg-gray-900 rounded-xl shadow-md flex justify-between items-center">
-            <h3 className="text-xl font-bold text-gray-800 dark:text-white">Total: ${totalAmount.toFixed(2)}</h3>
+          <div className="mt-6 p-4 bg-gray-100  rounded-xl shadow-md flex justify-between items-center">
+            <h3 className="text-xl font-bold text-gray-800 ">Total: ${totalAmount.toFixed(2)}</h3>
             <button 
               onClick={clearCart} 
               className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg"

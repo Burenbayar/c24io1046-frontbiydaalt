@@ -34,18 +34,18 @@ function ProductDetails() {
       </button>
       {product?.image && (
         <img
-          className="w-full h-64 object-cover rounded-lg"
+          className="w-full h-64 object-contain rounded-md"
           src={product.image}
           alt={product.name || "Product"}
         />
       )}
       <h2 className="text-2xl font-semibold mt-4">{product?.name}</h2>
-      <p className="text-gray-600 dark:text-gray-300">Price: ${product?.price}</p>
+      <p className="text-gray-600 ">Price: ${product?.price}</p>
       {product?.color && (
         <div className="mt-4 flex items-center">
-          <span className="text-gray-600 dark:text-gray-300 mr-2">Color:</span>
+          <span className="text-gray-600 ">Color:</span>
           <div
-            className="w-6 h-6 rounded-full border border-gray-300 dark:border-gray-600"
+            className="w-6 h-6 rounded-full border border-gray-300 "
             style={{ backgroundColor: product.color }}
           />
         </div>

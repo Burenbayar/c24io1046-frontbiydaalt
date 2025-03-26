@@ -5,7 +5,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gray-100 dark:bg-gray-900">
+    <div className="min-h-screen bg-gray-100 ">
   
       <div
         className="relative w-full h-[500px] bg-cover bg-center flex items-center justify-center text-center"
@@ -18,13 +18,6 @@ const Home = () => {
           <p className="text-lg sm:text-xl text-gray-300 mt-3">
             Find the best deals on trendy fashion and more!
           </p>
-          <button
-            className="  mt-5 px-6 py-3 bg-[#FFD700]  hover:bg-blue-700 transition-all duration-300 text-white font-medium rounded-lg shadow-lg hover:scale-105" 
-          
-            onClick={() => navigate("/shop")}
-          >
-            Shop Now
-          </button>
         </div>
       </div>
     </div>

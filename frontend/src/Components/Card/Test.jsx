@@ -4,7 +4,6 @@ import ColorList from "./ColorList";
 import Counter from "./Counter";
 import Filter from "./Filter";
 import { CartContext } from "../Pages/CartContext";
-import { Button } from "antd";
 
 function Mycard() {
   const [filters, setFilters] = useState({
@@ -89,8 +88,8 @@ function Mycard() {
                   }
                 />
 
-                <Button
-                  className="w-full mt-3 bg-[#111827] hover:bg-blue-700 text-white font-medium py-2 rounded-lg transition-all"
+                <button
+                  className="w-full mt-3 bg-[#130A78] hover:bg-blue-700 text-white font-medium py-2 rounded-lg transition-all"
                   onClick={() =>
                     addToCart({
                       ...product,
@@ -100,7 +99,7 @@ function Mycard() {
                   }
                 >
                   Add to Cart
-                </Button>
+                </button>
               </div>
             </div>
           ))}

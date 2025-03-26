@@ -8,7 +8,7 @@ const About = () => {
           About Us
         </h1>
         <p className="text-gray-600 dark:text-gray-300 mt-4 text-lg text-center">
-        Манай онлайн дэлгүүр нь чанартай, олон төрлийн бараа бүтээгдэхүүн-ийг хэрэглэгчдэдээ хүргэх зорилготой. Бид хялбар, найдвартай, түргэн шуурхай үйлчилгээг эрхэмлэн ажилладаг бөгөөд хэрэглэгчдийн хэрэгцээнд нийцсэн өндөр чанартай бүтээгдэхүүн, өргөн сонголт, уян хатан үнийн бодлого-тойгоор үйлчилж байна.
+        Manai online delguur ni chanartai, olon turliin baraa buteegdehuuniig hereglegchdedee hurgeh zorilgotoi. Bid hylbar, naidvartai, turgen shuurhai uilchilgeeg erhemlen ajilladag buguud hereglegchdiin heregtseeg niitssen undur chanartai buteegdehuun, urgun songolt, uyn hatan 
         </p>
         <div className="flex justify-center mt-6">
         </div>

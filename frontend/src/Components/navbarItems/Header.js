@@ -30,23 +30,15 @@ const AppHeader = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-gray-900 text-white shadow-lg z-50 flex items-center justify-between px-6 py-4 h-16">
-      <Link to="/">
-        <img 
-          src="download.jpg" 
-          alt="logo" 
-          className="w-16 h-16 rounded-full shadow-lg transition-transform duration-300 hover:scale-110" 
-        />
-      </Link>
-      
+    <header className="fixed top-0 left-0 w-full bg-[#130A78] text-white shadow-lg z-50 flex items-center justify-between px-6 py-4 h-16">
       <nav className="flex-grow flex justify-center">
         <ul className="flex space-x-6 text-lg">
-          <li><Link to="/" className="hover:text-gray-400">Home</Link></li>
-          <li><Link to="/shop" className="hover:text-gray-400">Shop</Link></li>
-          <li><Link to="/about" className="hover:text-gray-400">About</Link></li>
+          <li><Link to="/" className="hover:text-yellow-400">Home</Link></li>
+          <li><Link to="/shop" className="hover:text-yellow-400">Shop</Link></li>
+          <li><Link to="/about" className="hover:text-yellow-400">About</Link></li>
           <li className="relative">
             <Link to="/cart">
-              <img src="ggg.png" alt="cart" className="w-8 h-8" />
+            🛒
               {totalItems > 0 && (
                 <span className="absolute -top-2 -right-3 bg-red-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
                   {totalItems}

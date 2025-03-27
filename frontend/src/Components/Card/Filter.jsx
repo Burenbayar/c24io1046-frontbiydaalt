@@ -3,7 +3,7 @@ import { Form, Input, Select } from "antd";
 
 const Filter = ({ filters, setFilters }) => {
   return (
-    <Form  className="flex flex-col w-[300px] justify-center gap-2 p-6 bg-white  shadow-lg border border-gray-300  rounded-2xl">
+    <Form  className="flex flex-col w-1/5 justify-center gap-2 p-6 bg-white  shadow-lg border border-gray-300  rounded-2xl">
       <p className="text-center text-gray-400">Filter</p>
       <Form.Item className="w-full  ">
         <Input

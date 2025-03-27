@@ -29,7 +29,16 @@ const AHeader = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full bg-[#130A78] text-white shadow-lg z-50 flex items-center justify-between px-6 py-4 h-16">
-      <nav className="flex-grow flex justify-center">
+        {!userEmail ? (
+          <div className="flex justify-end">
+              <Link to="/login" className="flex space-x-2 hover:text-gray-400">
+            <span>Login</span>
+          </Link>
+          </div>
+          
+        ) : (<div className="fixed top-0 left-0 w-full bg-[#130A78] text-white shadow-lg z-50 flex items-center justify-between px-6 py-4 h-16">
+          <Link to="/profile" className="hover:text-yellow-400">{userEmail}</Link>
+          <nav className="flex-grow flex justify-center">
         <ul className="flex space-x-6 text-lg">
           <li><Link to="/" className="hover:text-yellow-400">Home</Link></li>
           <li><Link to="/shop" className="hover:text-yellow-400">Shop</Link></li>
@@ -46,22 +55,16 @@ const AHeader = () => {
           </li>
         </ul>
       </nav>
-      
-      <div className="flex items-center space-x-4">
-        {!userEmail ? (
-          <Link to="/login" className="flex items-center space-x-2 hover:text-gray-400">
-            <span>Login</span>
-          </Link>
-        ) : (
           <>
-            <span className="text-yellow-400">{userEmail}</span>
+            
             <button onClick={handleLogout} className="flex items-center space-x-2 hover:text-red-400">
-              
               <span>Logout</span>
             </button>
           </>
+          </div>
+          
         )}
-      </div>
+   
     </header>
   );
 };

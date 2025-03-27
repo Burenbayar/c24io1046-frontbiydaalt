@@ -10,6 +10,7 @@ const About = () => {
         <p className="text-gray-600  mt-4 text-lg text-center">
           Manai online delguur ni chanartai, olon turliin baraa buteegdehuuniig hereglegchdedee hurgeh zorilgotoi. Bid hylbar, naidvartai, turgen shuurhai uilchilgeeg erhemlen ajilladag.
         </p>
+       
       </div>
     
   );

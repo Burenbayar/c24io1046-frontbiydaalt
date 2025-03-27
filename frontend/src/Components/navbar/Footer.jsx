@@ -3,7 +3,7 @@ import { Layout } from "antd";
 
 const { Footer } = Layout;
 
-const AppFooter = () => {
+const AFooter = () => {
   return (
     <Footer style={{ textAlign: "center" }}>
       frontend biy daalt
@@ -11,4 +11,4 @@ const AppFooter = () => {
   );
 };
 
-export default AppFooter;
+export default AFooter;

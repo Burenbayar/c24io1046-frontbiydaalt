@@ -12,7 +12,7 @@ import ProductDetails from "../Card/more";
 
 const { Content } = Layout;
 
-const AppContent = ({ cart, setCart }) => { 
+const AContent = ({ cart, setCart }) => { 
 
 
   return (
@@ -36,4 +36,4 @@ const AppContent = ({ cart, setCart }) => {
   );
 };
 
-export default AppContent;
+export default AContent;

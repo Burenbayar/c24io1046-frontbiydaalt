@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { CartContext } from "../Pages/CartContext"
 
-const AppHeader = () => {
+const AHeader = () => {
   const { cart } = useContext(CartContext);
   const totalItems = cart.reduce((sum, item) => sum + (item.quantity || 1), 0);
   const [userEmail, setUserEmail] = useState(localStorage.getItem("userEmail"));
@@ -66,4 +66,4 @@ const AppHeader = () => {
   );
 };
 
-export default AppHeader;
+export default AHeader;

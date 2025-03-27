@@ -31,7 +31,7 @@ const Filter = ({ filters, setFilters }) => {
 
       <Form.Item className="w-full sm:w-1/2 lg:w-1/6 ">
         <Input
-          className="h-12 w-full px-4 border rounded-lg shadow-sm focus:ring focus:ring-blue-300 dark:bg-gray-900 dark:border-gray-600 dark:text-white"
+          className="h-12 w-full px-4 border rounded-lg shadow-sm focus:ring focus:ring-blue-300 "
           type="number"
           placeholder="Min Price"
           value={filters.minPrice}
@@ -41,7 +41,7 @@ const Filter = ({ filters, setFilters }) => {
 
       <Form.Item className="w-full sm:w-1/2 lg:w-1/6 ">
         <Input
-          className="h-12 w-full px-4 border rounded-lg shadow-sm focus:ring focus:ring-blue-300 dark:bg-gray-900 dark:border-gray-600 dark:text-white"
+          className="h-12 w-full px-4 border rounded-lg shadow-sm focus:ring focus:ring-blue-300 "
           type="number"
           placeholder="Max Price"
           value={filters.maxPrice}

@@ -3,17 +3,17 @@ import { Form, Input, Select } from "antd";
 
 const Filter = ({ filters, setFilters }) => {
   return (
-    <Form layout="inline" className="flex flex-wrap gap-6 p-6 bg-white dark:bg-gray-800 shadow-lg border border-gray-300 dark:border-gray-700 rounded-2xl">
+    <Form layout="inline" className="flex flex-wrap gap-6 p-6 bg-white  shadow-lg border border-gray-300  rounded-2xl">
       <Form.Item className="w-full sm:w-1/2 lg:w-1/4">
         <Input
-          className="h-12 w-full px-4 border rounded-lg shadow-sm focus:ring focus:ring-blue-300 dark:bg-gray-900 dark:border-gray-600 dark:text-white"
+          className="h-12 w-full px-4 border rounded-lg shadow-sm focus:ring focus:ring-blue-300 "
           placeholder="Search by name"
           value={filters.name}
           onChange={(e) => setFilters({ ...filters, name: e.target.value })}
         />
       </Form.Item>
 
-      <Form.Item className="w-full sm:w-1/2 lg:w-1/4">
+      <Form.Item className="w-full sm:w-1/2 lg:w-1/4 ">
         <Select
           className="h-12 w-full rounded-lg shadow-sm"
           placeholder="Select Color"
@@ -29,7 +29,7 @@ const Filter = ({ filters, setFilters }) => {
         </Select>
       </Form.Item>
 
-      <Form.Item className="w-full sm:w-1/2 lg:w-1/4">
+      <Form.Item className="w-full sm:w-1/2 lg:w-1/6 ">
         <Input
           className="h-12 w-full px-4 border rounded-lg shadow-sm focus:ring focus:ring-blue-300 dark:bg-gray-900 dark:border-gray-600 dark:text-white"
           type="number"
@@ -39,7 +39,7 @@ const Filter = ({ filters, setFilters }) => {
         />
       </Form.Item>
 
-      <Form.Item className="w-full sm:w-1/2 lg:w-1/4">
+      <Form.Item className="w-full sm:w-1/2 lg:w-1/6 ">
         <Input
           className="h-12 w-full px-4 border rounded-lg shadow-sm focus:ring focus:ring-blue-300 dark:bg-gray-900 dark:border-gray-600 dark:text-white"
           type="number"

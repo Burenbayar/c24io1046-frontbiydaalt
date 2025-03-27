@@ -18,7 +18,7 @@ const ColorList = ({ colors, selectedColor, onSelectColor }) => {
             </ul>
             <p className="mt-2 text-gray-700">
                 Active Color: <span className="font-semibold" style={{ color: selectedColor }}>
-                    {selectedColor || 'None'}
+                    {selectedColor || ''}
                 </span>
             </p>
         </div>

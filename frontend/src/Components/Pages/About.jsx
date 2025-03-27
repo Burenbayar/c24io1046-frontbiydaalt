@@ -8,10 +8,8 @@ const About = () => {
           About Us
         </h1>
         <p className="text-gray-600  mt-4 text-lg text-center">
-          Manai online delguur ni chanartai, olon turliin baraa buteegdehuuniig hereglegchdedee hurgeh zorilgotoi. Bid hylbar, naidvartai, turgen shuurhai uilchilgeeg erhemlen ajilladag buguud hereglegchdiin heregtseeg niitssen undur chanartai buteegdehuun, urgun songolt, uyn hatan
+          Manai online delguur ni chanartai, olon turliin baraa buteegdehuuniig hereglegchdedee hurgeh zorilgotoi. Bid hylbar, naidvartai, turgen shuurhai uilchilgeeg erhemlen ajilladag.
         </p>
-        <div className="flex justify-center mt-6">
-        </div>
       </div>
     
   );

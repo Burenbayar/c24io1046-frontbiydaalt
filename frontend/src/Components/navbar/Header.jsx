@@ -1,8 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { CartContext } from "../Pages/CartContext";
-import { FiLogOut } from "react-icons/fi";
-import { AiOutlineUser } from "react-icons/ai";
+import { CartContext } from "../Pages/CartContext"
 
 const AppHeader = () => {
   const { cart } = useContext(CartContext);
@@ -52,14 +50,13 @@ const AppHeader = () => {
       <div className="flex items-center space-x-4">
         {!userEmail ? (
           <Link to="/login" className="flex items-center space-x-2 hover:text-gray-400">
-            <AiOutlineUser className="text-xl" />
             <span>Login</span>
           </Link>
         ) : (
           <>
             <span className="text-yellow-400">{userEmail}</span>
             <button onClick={handleLogout} className="flex items-center space-x-2 hover:text-red-400">
-              <FiLogOut className="text-xl" />
+              
               <span>Logout</span>
             </button>
           </>

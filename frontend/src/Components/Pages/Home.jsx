@@ -8,7 +8,6 @@ const Home = () => {
   
       <div
         className="relative w-full h-[500px] bg-cover bg-center flex items-center justify-center text-center"
-       
       >
           <h1 className="text-4xl  font-extrabold text-black ">
             Welcome to Our Store

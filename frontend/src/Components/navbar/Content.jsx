@@ -7,7 +7,6 @@ import About from "../Pages/About";
 import Login from "../Pages/Login";
 import Profile from "../Pages/Profile";
 import Cart from "../Pages/Cart";
-import ProductTable from "../Pages/productTable";
 import SignUp from "../Pages/SignUp";
 import ProductDetails from "../Card/more";
 
